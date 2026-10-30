@@ -1,16 +1,121 @@
-# React + Vite
+# Finora – Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Expense Tracker application built as part of the CodeNova Full Stack Development Internship – Task 2.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add, edit, and delete transactions
+- Track income, expenses, and balance
+- Search transactions
+- Filter by income and expense
+- View spending breakdown by category
+- Interactive dashboard
+- MongoDB Atlas database integration
+- Responsive user interface
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Frontend**
+- React.js
+- Vite
+- CSS
+- Axios
+- Recharts
+- Lucide React
 
-## Expanding the ESLint configuration
+**Backend**
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+CodeNova-Expense-Tracker/
+├── frontend/
+│   └── src/
+│       ├── App.jsx
+│       ├── App.css
+│       ├── index.css
+│       └── main.jsx
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   ├── config/
+│   ├── server.js
+│   └── .env
+└── README.md
+```
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd CodeNova-Expense-Tracker
+```
+
+### 2. Setup Backend
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file inside the backend folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+Start the backend:
+
+```bash
+npm run dev
+```
+
+### 3. Setup Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL provided by Vite, usually:
+
+`http://localhost:5173`
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/expenses` | Get all transactions |
+| POST | `/api/expenses` | Add a transaction |
+| PUT | `/api/expenses/:id` | Update a transaction |
+| DELETE | `/api/expenses/:id` | Delete a transaction |
+
+## Security
+
+- Environment variables are excluded from Git using `.gitignore`.
+- Never commit your MongoDB connection string or `.env` file.
+
+## Internship
+
+**Program:** CodeNova Full Stack Development Internship  
+**Task:** Task 2 – Expense Tracker
+
+## Author
+
+## Author
+
+**Suresh Chavan**
+
+- GitHub: [github.com/sureshchavn](https://github.com/sureshchavn)
+- LinkedIn: [linkedin.com/in/sureshchavan](https://www.linkedin.com/in/suresh-chavan/)
