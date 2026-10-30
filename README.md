@@ -111,7 +111,6 @@ Open the local URL provided by Vite, usually:
 **Program:** CodeNova Full Stack Development Internship  
 **Task:** Task 2 – Expense Tracker
 
-## Author
 
 ## Author
 
