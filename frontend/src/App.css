@@ -1,0 +1,89 @@
+
+.app-shell { min-height: 100vh; display: flex; background: #f7f8fc; }
+.sidebar { width: 245px; background: #fff; border-right: 1px solid #eceef4; padding: 30px 20px; display: flex; flex-direction: column; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 11px; font: 800 23px 'Plus Jakarta Sans'; color: #292944; margin: 0 0 55px 5px; }
+.brand-icon { background: #7665df; color: white; width: 39px; height: 39px; border-radius: 12px; display: grid; place-items: center; }
+.brand-dot { color: #7665df; }
+.nav-label, .eyebrow { color: #a0a2b3; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; }
+.nav-label { margin: 0 0 14px 10px; }
+.nav-item { display: flex; align-items: center; gap: 13px; border: 0; padding: 13px 14px; border-radius: 10px; width: 100%; background: transparent; color: #77798d; text-align: left; font-weight: 600; }
+.nav-item.active { color: #7665df; background: #f0edff; }
+.sidebar-bottom { margin-top: auto; }
+.profile { display: flex; align-items: center; gap: 11px; border-top: 1px solid #eff0f5; padding: 22px 3px 15px; }
+.avatar { width: 37px; height: 37px; border-radius: 50%; background: #eeeaff; color: #7665df; display: grid; place-items: center; font-weight: 800; }
+.profile strong, .profile small { display: block; }
+.profile strong { font-size: 12px; }
+.profile small { color: #9a9bad; font-size: 11px; margin-top: 3px; }
+.sidebar-footer { color: #b0b1bf; font-size: 10px; text-align: center; }
+.main-content { flex: 1; padding: 32px 4.2%; min-width: 0; max-width: 1600px; margin: 0 auto; }
+.topbar, .top-actions, .welcome-row, .stat-top, .panel-heading, .toolbar, .transaction-row, .modal-heading { display: flex; align-items: center; justify-content: space-between; }
+.topbar h1 { font: 800 27px 'Plus Jakarta Sans'; margin: 4px 0 0; }
+.eyebrow { margin: 0; }
+.top-actions { gap: 13px; }
+.icon-button { background: white; border: 1px solid #eceef4; color: #73758a; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; }
+.add-button, .submit-button { background: #7665df; color: white; border: 0; border-radius: 10px; padding: 12px 17px; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 12px; box-shadow: 0 5px 14px #7665df30; }
+.welcome-row { margin: 36px 0 24px; }
+.welcome-row h2 { font: 700 19px 'Plus Jakarta Sans'; margin: 0 0 5px; }
+.welcome-row p, .panel-heading p { color: #999bad; font-size: 12px; margin: 0; }
+.date-chip { display: flex; align-items: center; gap: 8px; background: white; border: 1px solid #eceef4; border-radius: 9px; padding: 10px 13px; color: #77798d; font-size: 11px; }
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.stat-card, .panel { background: white; border: 1px solid #eceef4; border-radius: 15px; }
+.stat-card { padding: 21px 22px; }
+.stat-top { color: #85879b; font-size: 12px; font-weight: 600; }
+.stat-icon { width: 37px; height: 37px; border-radius: 11px; display: grid; place-items: center; }
+.purple { color: #7665df; background: #f0edff; }
+.green { color: #24a987; background: #e7f8f2; }
+.orange { color: #e99a47; background: #fff3e5; }
+.stat-card h2 { font: 800 25px 'Plus Jakarta Sans'; margin: 17px 0 7px; }
+.stat-note { color: #a2a3b2; font-size: 11px; margin: 0; display: flex; align-items: center; gap: 4px; }
+.positive { color: #23a987; }
+.negative { color: #e69a51; }
+.content-grid { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(270px, 0.9fr); gap: 19px; margin-top: 22px; }
+.panel { padding: 23px; min-width: 0; }
+.panel-heading { margin-bottom: 22px; }
+.panel-heading h3 { font: 700 15px 'Plus Jakarta Sans'; margin: 0 0 6px; }
+.text-button { display: flex; gap: 5px; align-items: center; border: 0; background: transparent; color: #7665df; font-size: 11px; font-weight: 700; }
+.toolbar { gap: 10px; margin-bottom: 13px; }
+.search-box { display: flex; align-items: center; gap: 8px; border: 1px solid #eceef4; border-radius: 9px; padding: 0 11px; flex: 1; color: #a3a4b2; }
+.search-box input { width: 100%; border: 0; outline: none; padding: 11px 0; font-size: 11px; color: #333; }
+.toolbar select, .form-two select { border: 1px solid #eceef4; border-radius: 9px; background: white; color: #66687d; padding: 10px; font-size: 11px; outline: none; }
+.transaction-row { justify-content: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid #f0f1f5; }
+.transaction-icon { width: 39px; height: 39px; flex-shrink: 0; border-radius: 11px; display: grid; place-items: center; background: #f1edff; color: #7665df; }
+.income-icon { background: #e7f8f2; color: #23a987; }
+.transaction-info { flex: 1; min-width: 0; }
+.transaction-info strong, .transaction-info small { display: block; }
+.transaction-info strong { font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.transaction-info small { color: #a0a1b0; font-size: 10px; margin-top: 5px; }
+.transaction-amount { font-size: 12px; white-space: nowrap; }
+.income-text { color: #23a987; }
+.row-actions { display: flex; gap: 3px; opacity: 0; }
+.transaction-row:hover .row-actions { opacity: 1; }
+.row-actions button, .close-button { border: 0; background: transparent; color: #9a9bad; padding: 6px; }
+.empty-state, .chart-empty { text-align: center; color: #a0a1b0; padding: 35px 10px; font-size: 12px; }
+.chart-wrap { width: 100%; }
+.category-legend { display: grid; gap: 12px; margin-top: 10px; }
+.legend-row, .legend-row span { display: flex; align-items: center; justify-content: space-between; }
+.legend-row { font-size: 11px; color: #77798d; }
+.legend-row span { gap: 8px; }
+.legend-row i { width: 8px; height: 8px; border-radius: 50%; }
+.legend-row strong { color: #34344a; }
+.error-banner { background: #fff0f0; color: #bd4545; padding: 12px 15px; border-radius: 9px; margin: 15px 0; display: flex; justify-content: space-between; font-size: 12px; }
+.error-banner button { background: transparent; border: 0; color: inherit; }
+.modal-overlay { position: fixed; inset: 0; z-index: 10; background: #20203980; display: grid; place-items: center; padding: 16px; overflow-y: auto; }
+.expense-modal { width: 100%; max-width: 470px; background: white; border-radius: 17px; padding: 27px; box-shadow: 0 20px 70px #17172d30; }
+.modal-heading { margin-bottom: 22px; }
+.modal-heading h2 { font: 800 19px 'Plus Jakarta Sans'; margin: 0 0 5px; }
+.modal-heading p { color: #999bad; font-size: 11px; margin: 0; }
+.expense-modal label { display: block; font-size: 11px; font-weight: 700; color: #55566b; margin: 14px 0 7px; }
+.expense-modal input, .expense-modal textarea, .form-two select { width: 100%; border: 1px solid #e8e9f0; border-radius: 8px; padding: 11px; outline: none; color: #3b3b50; font-size: 12px; background: white; }
+.expense-modal input:focus, .expense-modal textarea:focus { border-color: #9487ed; }
+.type-toggle { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.type-toggle button { padding: 10px; border: 1px solid #eceef4; background: white; border-radius: 8px; color: #85869a; font-size: 12px; }
+.type-toggle .expense-selected { background: #fff1e9; color: #db8741; border-color: #f4c59f; }
+.type-toggle .income-selected { background: #e7f8f2; color: #23a987; border-color: #a4dfca; }
+.form-two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-two select { padding: 11px; }
+.expense-modal textarea { resize: vertical; }
+.submit-button { width: 100%; margin-top: 20px; padding: 14px; }
+@media (max-width: 900px) { .sidebar { width: 190px; } .main-content { padding: 25px 3%; } .content-grid { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .sidebar { width: 65px; padding: 20px 10px; } .brand { margin: 0 0 45px; justify-content: center; } .brand > span, .nav-label, .nav-item:not(.active), .nav-item { font-size: 0; } .nav-item { justify-content: center; padding: 13px 0; } .nav-item svg { width: 21px; height: 21px; } .profile { justify-content: center; } .profile > div:last-child, .sidebar-footer { display: none; } .main-content { padding: 22px 13px; } .topbar h1 { font-size: 22px; } .add-button { padding: 10px; font-size: 0; } .add-button svg { width: 19px; height: 19px; } .welcome-row { align-items: flex-start; gap: 10px; flex-direction: column; margin: 28px 0 19px; } .stats-grid { grid-template-columns: 1fr; gap: 10px; } .stat-card { padding: 16px; } .stat-card h2 { font-size: 22px; margin: 10px 0 5px; } .panel { padding: 16px; } .transaction-row { gap: 8px; } .transaction-amount { font-size: 10px; } .row-actions { opacity: 1; } .form-two { grid-template-columns: 1fr; gap: 0; } .expense-modal { padding: 20px; } }
