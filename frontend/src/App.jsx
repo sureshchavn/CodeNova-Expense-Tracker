@@ -13,7 +13,7 @@ import {
 } from "recharts";
 import "./App.css";
 
-const API = "http://localhost:5000/api/expenses";
+const API = "https://codenova-expense-tracker.onrender.com/api/expenses";
 
 const categories = [
   "Food", "Travel", "Shopping", "Bills",
